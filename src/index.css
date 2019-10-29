@@ -11,3 +11,9 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.shift {
+  background-color: red;
+  height: 100px;
+  width: 60px;
+}
