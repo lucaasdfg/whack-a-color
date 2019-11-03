@@ -1,15 +1,13 @@
 import React from 'react';
 import './App.css';
-import Table from "./Components/Table";
-import Demo from "./Components/Demo";
+import Properties from "./Components/Properties"
+
 function App() {
-  return (
-    <div className="App">
-      <div>hola</div>
-      <Table/>
-      <Demo/>
-    </div>
-  );
+    return (
+      <div className="App">
+        <Properties/>
+      </div>
+    )
 }
 
 export default App;

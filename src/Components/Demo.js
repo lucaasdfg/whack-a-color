@@ -22,17 +22,16 @@ class Demo extends Component {
         bgColor: this.state.randomItem
       })
     }
-    resetForm = () => {
-        this.setState({
-        
-            randomItem: ""
-        })
-     }
+    
     myArray = [
         "red",
         "green"
     ];
-  
+    componentWillUnmount() { // clear the interval when the component is unmounted
+        this.setState({
+        randomItem: ""
+        })
+      }
     render() {
       return (
         <div className="App">
@@ -47,7 +46,7 @@ class Demo extends Component {
           </article>
           <div><h3>{this.state.randomItem}</h3></div>
                 <div className="shift" onClick={this.boxClick}>red</div>
-                <div className="shift" style={{backgroundColor: this.state.bgColor}} onClick={this.boxClick, this.resetForm}>red</div>
+                <div className="shift" style={{backgroundColor: this.state.bgColor}} onClick={this.boxClick}>red</div>
   
         </div>
       );
