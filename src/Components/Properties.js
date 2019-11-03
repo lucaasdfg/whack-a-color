@@ -4,9 +4,9 @@ import List from "./List"
 class Properties extends React.Component{
     state = {
         list: [
-            {name: "lucas", age: "20", belt: "red"},
-            {name: "yoshi", age: "100", belt: "red"},
-            {name: "mario", age: "50", belt: "red"}
+            {name: "lucas", age: "20", belt: "red", id:0},
+            {name: "yoshi", age: "100", belt: "red",id:1},
+            {name: "mario", age: "50", belt: "red", id:2}
         ]
     }
     render(){

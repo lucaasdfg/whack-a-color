@@ -5,7 +5,7 @@ class List extends React.Component{
         const {list} = this.props;
         const numbersList = list.map(num => {
             return(
-                <div className="list">
+                <div className="list" key={num.id}>
                     <div>Name: {num.name}</div>
                     <div>Age: {num.age}</div>
                     <div>Belt: {num.belt}</div>
@@ -13,7 +13,7 @@ class List extends React.Component{
             )
         })
         return(
-            <div>
+            <div className="num-list">
             {numbersList}
             </div>
         )
