@@ -6,7 +6,9 @@ class List extends React.Component{
         const numbersList = list.map(num => {
             return(
                 <div className="list">
-                    <div>Number: {num}</div>
+                    <div>Name: {num.name}</div>
+                    <div>Age: {num.age}</div>
+                    <div>Belt: {num.belt}</div>
                 </div>
             )
         })
